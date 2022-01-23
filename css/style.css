@@ -1,0 +1,480 @@
+:root {
+  --clr-primary-soft-red: hsl(7, 99%, 70%);
+  --clr-primary-yellow: hsl(51, 100%, 49%);
+  --clr-primary-dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --clr-primary-dark-blue: hsl(198, 62%, 26%);
+  --clr-primary-dark-moderate-cyan: hsl(168, 34%, 41%);
+  --clr-primary-footer: hsl(167, 44%, 70%);
+  --clr-neutral-very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --clr-neutral-very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --clr-neutral-dark-grayish-blue: hsl(232, 10%, 55%);
+  --clr-neutral-grayish-blue: hsl(210, 4%, 67%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --ff-primary: "Barlow", sans-serif;
+  --ff-accent: "Fraunces", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* outline: solid 1px red; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.125em;
+  font-family: var(--ff-primary);
+  color: var(--clr-neutral-very-dark-grayish-blue);
+  max-width: 1440px;
+  margin: auto;
+  background-color: black;
+}
+
+header {
+  background-image: url("../images/desktop/image-header.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+button {
+  padding: 1em 2em;
+  border-radius: 5em;
+  border: none;
+  font-family: var(--ff-accent);
+  font-weight: 700;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  background-color: var(--clr-neutral-white);
+}
+
+button:hover {
+  background-color: var(--clr-primary-footer);
+  color: var(--clr-neutral-white);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.container {
+  padding-top: 1.5em;
+  width: 1440px;
+  margin: auto;
+}
+
+.subcontainer {
+  /* adjust this width to your taste   */
+  width: 85%;
+  margin: auto;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  transition: 0.3s ease-out;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 450px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-txt {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  font-size: 1.5em;
+  margin: 3em 0;
+}
+
+.hero-img {
+  margin-bottom: 15em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  background-color: var(--clr-neutral-white);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  padding: 9em;
+}
+
+a#transform, a#stand-out {
+  color: black;
+}
+
+a#transform:hover {
+  border-bottom: solid 5px var(--clr-primary-yellow);
+}
+
+a#stand-out:hover {
+  border-bottom: solid 5px var(--clr-primary-soft-red);
+}
+
+.card-2 {
+  background-image: url("../images/desktop/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card-3 {
+  background-image: url("../images/desktop/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card-title {
+  font-family: var(--ff-accent);
+  font-weight: 700;
+  color: black;
+}
+
+.designs {
+  color: var(--clr-neutral-very-dark-desaturated-blue);
+}
+
+.card-link {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.fill, .card-img {
+  flex-shrink: 0;
+  width: 100%;
+  min-height: 50%
+}
+
+.card-5 {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 100%;
+}
+
+.card-6 {
+  background-image: url("../images/desktop/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 100%;
+}
+
+.card-design-photography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 70vh;
+  text-align: center;
+  color: var(--clr-primary-dark-blue);
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 2em;
+}
+
+.design {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.client-data {
+  background-color: var(--clr-neutral-white);
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 75%;
+}
+
+.client-header {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 4em 0;
+  font-family: var(--ff-accent);
+  text-align: center;
+  font-weight: 700;
+}
+.client-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+}
+
+.client-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  min-height: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.card-image {
+  border-radius: 50%;
+}
+
+.client-card-data {
+  min-height: 30%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.client-name {
+  font-family: var(--ff-accent);
+  font-weight: 700;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.gallery-image {
+  height: 50vh;
+  width: 100%;
+}
+
+.footer {
+  background-color: var(--clr-primary-footer);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-image {
+  margin-bottom: 2em;
+}
+
+.footer-nav-link {
+  color: var(--clr-primary-dark-moderate-cyan);
+}
+
+a.footer-nav-link:hover {
+  color: var(--clr-neutral-white);
+}
+
+.media {
+  display: flex;
+  gap: 40px;
+  margin-top: 5em;
+}
+
+.icon:hover {
+  fill: var(--clr-neutral-white);
+}
+
+.attribution {
+  display: none;
+  text-align: center;
+  background-color: var(--clr-primary-footer);
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 450px) {
+  .card-design-photography {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+  }
+  .client {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 94px;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--clr-neutral-white);
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  button {
+    background-color: var(--clr-primary-yellow);
+  }
+
+  a {
+    color: black;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 5%;
+  }
+
+  .header {
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    align-items: center;
+    padding: 2em;
+  }
+
+  .card-1 {
+    order: 2;
+    text-align: center;
+  }
+
+  .card-2 {
+    order: 1;
+  }
+
+  .card-3 {
+    order: 3;
+  }
+
+  .card-4 {
+    order: 4;
+    text-align: center;
+  }
+
+  .card-5 {
+    order: 5;
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+  }
+
+  .card-6 {
+    order: 6;
+    background-image: url('../images/mobile/image-photography.jpg');
+  }
+
+  .client-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .gallery-image {
+    height: 25vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+}
