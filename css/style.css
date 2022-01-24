@@ -173,16 +173,17 @@ a#stand-out:hover {
   border-bottom: solid 5px var(--clr-primary-soft-red);
 }
 
-.card-2 {
-  background-image: url("../images/desktop/image-transform.jpg");
+card-2, card-3 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
+.card-2 {
+  background-image: url("../images/desktop/image-transform.jpg");  
+}
+
 .card-3 {
   background-image: url("../images/desktop/image-stand-out.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .card-title {
@@ -191,13 +192,14 @@ a#stand-out:hover {
   color: black;
 }
 
-.designs {
-  color: var(--clr-neutral-very-dark-desaturated-blue);
-}
-
 .card-link {
+  font-family: var(--ff-accent);
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.designs {
+  color: var(--clr-neutral-very-dark-desaturated-blue);
 }
 
 .fill {
@@ -206,6 +208,7 @@ a#stand-out:hover {
   align-items: center;
   overflow: hidden
 }
+
 .fill, .card-img {
   flex-shrink: 0;
   width: 100%;
