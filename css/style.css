@@ -395,10 +395,10 @@ a.footer-nav-link:hover {
     gap: 0;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
     background-color: var(--clr-neutral-white);
     width: 90%;
-    height: 450px;
+    height: 300px;
     margin: auto;
     text-align: center;
     transition: 0.3s;
