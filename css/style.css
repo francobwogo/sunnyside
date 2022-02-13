@@ -31,18 +31,16 @@ body {
   font-size: 1.125em;
   font-family: var(--ff-primary);
   color: var(--clr-neutral-very-dark-grayish-blue);
-  max-width: 1440px;
+  max-width: 1920px;
   margin: auto;
   background-color: black;
 }
 
-header {
+.header {
   background-image: url("../images/desktop/image-header.jpg");
-  min-height: 500px;
-  background-position: center;
+  background-position: center center; 
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 button {
@@ -73,7 +71,6 @@ a {
 
 .container {
   padding-top: 1.5em;
-  width: 1440px;
   margin: auto;
 }
 
@@ -124,7 +121,8 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 450px;
+  gap: 5em;
+  max-height: 100vh;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -137,7 +135,7 @@ a {
   font-family: var(--ff-accent);
   font-weight: 900;
   font-size: 1.5em;
-  margin: 3em 0;
+  margin: 3em 0 0 0;
   color: var(--clr-neutral-white);
 }
 
@@ -210,9 +208,8 @@ card-2, card-3 {
 }
 
 .fill, .card-img {
-  flex-shrink: 0;
   width: 100%;
-  min-height: 50%
+  height: 100%;
 }
 
 .card-5 {
@@ -237,9 +234,9 @@ card-2, card-3 {
   height: 70vh;
   text-align: center;
   color: var(--clr-primary-dark-blue);
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-bottom: 2em;
+  padding-left: 15em;
+  padding-right: 15em;
+  padding-bottom: 5em;
 }
 
 .design {
@@ -252,6 +249,7 @@ card-2, card-3 {
 
 .client-data {
   background-color: var(--clr-neutral-white);
+  margin: auto;
 }
 
 .client {
@@ -358,22 +356,16 @@ a.footer-nav-link:hover {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1600px) {
   .card-design-photography {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 2em;
-  }
-  .client {
-    width: 100%;
+    padding-left: 9em;
+    padding-right: 9em;
+    padding-bottom: 10em;
+    height: 50vh;
   }
 }
 
 @media (max-width: 1024px) {
-  .header {
-    background-image: url("../images/mobile/image-header.jpg");
-  }
-
   .hamburger {
     display: block;
   }
@@ -418,10 +410,6 @@ a.footer-nav-link:hover {
 
   .nav-menu.active {
     left: 5%;
-  }
-
-  .header {
-    background-image: url("../images/mobile/image-header.jpg");
   }
   
   .grid {
@@ -475,10 +463,38 @@ a.footer-nav-link:hover {
     height: 25vh;
     width: 100%;
   }
+
 }
 
-@media (max-width: 1440px) {
-  .container {
+@media (max-width: 450px) {
+  .card-design-photography {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    height: 30vh;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-height: 27vh;
+    padding-top: 10em;
+  }
+
+  .hero-txt {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1em;
+    margin: 0;
+    color: var(--clr-neutral-white);
+  }
+
+  .header {
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+  
+  .client {
     width: 100%;
   }
 }
